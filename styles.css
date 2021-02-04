@@ -2,6 +2,7 @@
     animation: change-color 4s infinite;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +21,7 @@
     }
 }
 
-.container {
+.container, .security-container{
     background-color: cadetblue;
     width: 50vh;
     height: 50vh;
@@ -81,8 +82,31 @@
     padding: 1em;
 }
 
-.container-button {
+.container-button, .security-container{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.security-container {
+    height: 15%;
+    width: 75%;
+    margin-top: 2em;
+}
+
+.security {
+    background-color: white;
+    width: 95%;
+    height: 85%;
+    border-radius: 50px;
+}
+
+.security-level {
+    height: 100%;
+    background-color: black;
+    width: 1em;
+    border-radius: 50px;
+    padding-left: 10%;
+    transition: width 1s;
+    max-width: 100%;
 }
